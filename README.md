@@ -1,3 +1,5 @@
+![IP QuickCheck Icon](assets/icon300.png)
+
 # IP QuickCheck - One-Click IP Reputation Lookup
 
 **Built by 0xarun**
@@ -73,6 +75,17 @@ Click the extension icon to open the popup and view the last checked IP's reputa
 - **Red**: Malicious IP (has detections or high abuse score)
 - **Neutral**: Moderate risk (some detections or medium abuse score)
 
+## Screenshots
+
+### Extension Popup
+![Extension Popup](assets/Extension.png)
+
+### Setup Page
+![Setup Page](assets/setup-page.png)
+
+### Working Example
+![Working Example](assets/working.png)
+
 ## Browser Compatibility
 
 - Chrome (Manifest V3)
@@ -85,8 +98,8 @@ Click the extension icon to open the popup and view the last checked IP's reputa
 ### Project Structure
 
 ```
-ip-rep-check/
-├── assets/          # Extension icons
+ip-quickcheck/
+├── assets/          # Extension icons (16, 32, 48, 128, 300) and screenshots
 ├── background.js    # Service worker for API calls
 ├── manifest.json    # Extension manifest
 ├── options/         # Options page (API key setup)
