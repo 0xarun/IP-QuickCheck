@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IP QuickCheck - Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <div class="header-brand">
+                <img src="../assets/icon128.png" alt="IP QuickCheck" class="brand-icon">
+                <div class="brand-text">
+                    <h1>IP QuickCheck</h1>
+                    <p class="brand-subtitle">One-Click IP Reputation Lookup</p>
+                </div>
+            </div>
+            <p class="built-by">Built by <span class="author">0xarun</span></p>
+        </header>
+
+        <main class="dashboard-content">
+            <section class="card api-keys-card">
+                <div class="card-header">
+                    <div class="card-icon">🔑</div>
+                    <div>
+                        <h2>API Configuration</h2>
+                        <p class="card-description">Enter your API keys to enable IP reputation checks</p>
+                    </div>
+                </div>
+                
+                <div class="api-form">
+                    <div class="input-group">
+                        <label for="vtKey">
+                            <span class="label-icon">🛡️</span>
+                            VirusTotal API Key
+                        </label>
+                        <input 
+                            id="vtKey" 
+                            type="password" 
+                            class="api-input" 
+                            placeholder="Enter your VirusTotal API key"
+                            autocomplete="off"
+                        >
+                        <p class="input-hint">Get your key from <a href="https://www.virustotal.com/gui/join-us" target="_blank">virustotal.com</a></p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="abuseKey">
+                            <span class="label-icon">🚨</span>
+                            AbuseIPDB API Key
+                        </label>
+                        <input 
+                            id="abuseKey" 
+                            type="password" 
+                            class="api-input" 
+                            placeholder="Enter your AbuseIPDB API key"
+                            autocomplete="off"
+                        >
+                        <p class="input-hint">Get your key from <a href="https://www.abuseipdb.com/pricing" target="_blank">abuseipdb.com</a></p>
+                    </div>
+
+                    <button id="save" class="save-btn">
+                        <span class="btn-icon">💾</span>
+                        Save API Keys
+                    </button>
+                    <div id="saveSuccess" class="save-success" style="display: none;">
+                        <span class="success-icon">✓</span>
+                        <div>
+                            <p class="success-title">Keys saved successfully!</p>
+                            <p class="success-message">You can now close this tab and start checking IPs.</p>
+                        </div>
+                    </div>
+                    <p class="security-note">
+                        <span class="lock-icon">🔒</span>
+                        Your keys are encrypted and stored locally. They never leave your browser.
+                    </p>
+                </div>
+            </section>
+
+            <div class="two-column-container">
+                <section class="card info-card">
+                    <div class="card-header">
+                        <div class="card-icon">⚡</div>
+                        <div>
+                            <h2>Quick Start</h2>
+                            <p class="card-description">Get started in seconds</p>
+                        </div>
+                    </div>
+                    <ol class="steps-list">
+                        <li>Enter your API keys above</li>
+                        <li>Right-click any IP address on any webpage</li>
+                        <li>Select "Check IP Reputation" from the menu</li>
+                        <li>View instant results with color-coded indicators</li>
+                    </ol>
+                </section>
+
+                <section class="card features-card">
+                    <div class="card-header">
+                        <div class="card-icon">✨</div>
+                        <div>
+                            <h2>Features</h2>
+                            <p class="card-description">Everything you need for IP analysis</p>
+                        </div>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🔍</span>
+                            <span>One-click lookup</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🛡️</span>
+                            <span>VirusTotal integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚨</span>
+                            <span>AbuseIPDB integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎨</span>
+                            <span>Color-coded results</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔒</span>
+                            <span>Local storage only</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span>Lightning fast</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <span class="footer-icon">🛡️</span>
+                    Designed for SOC Analysts, Threat Hunters & Security Engineers
+                </p>
+                <p class="footer-credit">
+                    Built with ❤️ by <span class="author">0xarun</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="popup-header">
+            <img src="../assets/icon128.png" alt="IP QuickCheck" class="header-icon">
+            <div class="header-text">
+                <h2>IP QuickCheck</h2>
+                <p class="subhead">Built by 0xarun</p>
+            </div>
+        </header>
+
+        <div id="ip" class="ip-box"></div>
+
+        <div class="result-card">
+            <div class="card-header">
+                <span class="card-icon">🛡️</span>
+                <h3>VirusTotal</h3>
+            </div>
+            <div id="vt" class="box">Loading...</div>
+        </div>
+
+        <div class="result-card">
+            <div class="card-header">
+                <span class="card-icon">🚨</span>
+                <h3>AbuseIPDB</h3>
+            </div>
+            <div id="abuse" class="box">Loading...</div>
+        </div>
+
+        <div class="result-card">
+            <div class="card-header">
+                <span class="card-icon">🔒</span>
+                <h3>Defanged IP</h3>
+            </div>
+            <div id="defanged" class="box">Loading...</div>
+        </div>
+
+        <footer class="popup-footer">
+            <a href="#" id="optionsLink" class="options-link">
+                <span class="link-icon">⚙️</span>
+                <span>Change API Keys</span>
+            </a>
+        </footer>
+
+        <script src="popup.js"></script>
+    </div>
+</body>
+</html>
