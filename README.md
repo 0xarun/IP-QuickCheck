@@ -1,4 +1,6 @@
-![IP QuickCheck Icon](assets/icon300.png)
+<div align="center">
+  <img src="assets/icon300.png" alt="IP QuickCheck Icon" width="300">
+</div>
 
 # IP QuickCheck - One-Click IP Reputation Lookup
 
