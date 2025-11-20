@@ -84,8 +84,19 @@ Click the extension icon to open the popup and view the last checked IP's reputa
 
 ## Screenshots
 
-### Extension Popup
-![Extension Popup](assets/Extension.png)
+### Extension Popup Views
+<table>
+  <tr>
+    <td align="center">
+      <strong>Reputation Summary</strong><br>
+      <img src="assets/Extension.png" width="320" alt="Extension popup summary view">
+    </td>
+    <td align="center">
+      <strong>Network Insights</strong><br>
+      <img src="assets/Extension2.png" width="320" alt="Extension popup network insights view">
+    </td>
+  </tr>
+</table>
 
 ### Setup Page
 ![Setup Page](assets/setup-page.png)
