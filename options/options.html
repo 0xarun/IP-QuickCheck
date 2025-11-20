@@ -34,13 +34,16 @@
                             <span class="label-icon">🛡️</span>
                             VirusTotal API Key
                         </label>
-                        <input 
-                            id="vtKey" 
-                            type="password" 
-                            class="api-input" 
-                            placeholder="Enter your VirusTotal API key"
-                            autocomplete="off"
-                        >
+                        <div class="input-wrapper">
+                            <input 
+                                id="vtKey" 
+                                type="password" 
+                                class="api-input" 
+                                placeholder="Enter your VirusTotal API key"
+                                autocomplete="off"
+                            >
+                            <button type="button" class="toggle-visibility" data-target="vtKey" aria-label="Show VirusTotal key">👁️</button>
+                        </div>
                         <p class="input-hint">Get your key from <a href="https://www.virustotal.com/gui/join-us" target="_blank">virustotal.com</a></p>
                     </div>
 
@@ -49,14 +52,35 @@
                             <span class="label-icon">🚨</span>
                             AbuseIPDB API Key
                         </label>
-                        <input 
-                            id="abuseKey" 
-                            type="password" 
-                            class="api-input" 
-                            placeholder="Enter your AbuseIPDB API key"
-                            autocomplete="off"
-                        >
+                        <div class="input-wrapper">
+                            <input 
+                                id="abuseKey" 
+                                type="password" 
+                                class="api-input" 
+                                placeholder="Enter your AbuseIPDB API key"
+                                autocomplete="off"
+                            >
+                            <button type="button" class="toggle-visibility" data-target="abuseKey" aria-label="Show AbuseIPDB key">👁️</button>
+                        </div>
                         <p class="input-hint">Get your key from <a href="https://www.abuseipdb.com/pricing" target="_blank">abuseipdb.com</a></p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="ipinfoKey">
+                            <span class="label-icon">🌐</span>
+                            Ipinfo API Token
+                        </label>
+                        <div class="input-wrapper">
+                            <input 
+                                id="ipinfoKey" 
+                                type="password" 
+                                class="api-input" 
+                                placeholder="Enter your Ipinfo token"
+                                autocomplete="off"
+                            >
+                            <button type="button" class="toggle-visibility" data-target="ipinfoKey" aria-label="Show Ipinfo token">👁️</button>
+                        </div>
+                        <p class="input-hint">Create a token at <a href="https://ipinfo.io/signup" target="_blank">ipinfo.io</a> (used for ISP & geolocation)</p>
                     </div>
 
                     <button id="save" class="save-btn">
@@ -114,6 +138,10 @@
                         <div class="feature-item">
                             <span class="feature-icon">🚨</span>
                             <span>AbuseIPDB integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌐</span>
+                            <span>Ipinfo network context</span>
                         </div>
                         <div class="feature-item">
                             <span class="feature-icon">🎨</span>

@@ -164,6 +164,12 @@ body {
     gap: 8px;
 }
 
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .input-group label {
     display: flex;
     align-items: center;
@@ -182,6 +188,7 @@ body {
 .api-input {
     width: 100%;
     padding: 14px 16px;
+    padding-right: 48px;
     background: rgba(15, 23, 42, 0.6);
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -196,6 +203,31 @@ body {
     border-color: var(--accent-cyan);
     box-shadow: 0 0 0 3px var(--glow-cyan), 0 0 20px var(--glow-cyan);
     background: rgba(15, 23, 42, 0.8);
+}
+
+.toggle-visibility {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(15, 23, 42, 0.65);
+    color: var(--text-secondary);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.toggle-visibility:hover {
+    color: var(--accent-cyan);
+    background: rgba(34, 211, 238, 0.15);
+    box-shadow: 0 0 12px var(--glow-cyan);
 }
 
 .api-input::placeholder {

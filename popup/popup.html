@@ -12,42 +12,83 @@
                 <h2>IP QuickCheck</h2>
                 <p class="subhead">Built by 0xarun</p>
             </div>
+            <button id="optionsLink" class="settings-btn" title="Change API Keys">⚙️ Settings</button>
         </header>
 
         <div id="ip" class="ip-box"></div>
 
-        <div class="result-card">
+        <section class="card summary-card">
             <div class="card-header">
-                <span class="card-icon">🛡️</span>
-                <h3>VirusTotal</h3>
+                <span class="card-icon">🔍</span>
+                <h3>IP Reputation Summary</h3>
             </div>
-            <div id="vt" class="box">Loading...</div>
+            <div class="summary-metrics">
+                <div id="vtMetric" class="metric-pill">
+                    <p class="metric-label">VirusTotal</p>
+                    <p class="metric-value">—</p>
+                    <p class="metric-subtext">Awaiting data</p>
+                </div>
+                <div id="abuseMetric" class="metric-pill">
+                    <p class="metric-label">AbuseIPDB</p>
+                    <p class="metric-value">—</p>
+                    <p class="metric-subtext">Awaiting data</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card network-card">
+            <div class="card-header">
+                <span class="card-icon">🌐</span>
+                <h3>Network Information</h3>
+            </div>
+            <div id="ipinfoStatus" class="section-hint">Loading Ipinfo details…</div>
+            <div class="ipinfo-grid" id="ipinfoGrid" hidden>
+                <div class="info-row">
+                    <span class="info-label">ISP / ASN</span>
+                    <span class="info-value" id="ipinfoOrg">—</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Reverse DNS</span>
+                    <span class="info-value" id="ipinfoRdns">—</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Location</span>
+                    <span class="info-value" id="ipinfoLocation">—</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Coordinates</span>
+                    <span class="info-value" id="ipinfoCoords">—</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">IP Type</span>
+                    <span class="info-value" id="ipinfoType">—</span>
+                </div>
+            </div>
+            <div class="privacy-chips" id="privacyChips"></div>
+        </section>
+
+        <div class="inline-row defanged-inline">
+            <div class="inline-header">
+                <span class="inline-title">Defanged IP</span>
+            </div>
+            <div class="defanged-content">
+                <p id="defangedValue" class="defanged-ip">—</p>
+            </div>
+            <button id="copyDefanged" class="ghost-btn" aria-label="Copy defanged IP">Copy</button>
         </div>
 
-        <div class="result-card">
-            <div class="card-header">
-                <span class="card-icon">🚨</span>
-                <h3>AbuseIPDB</h3>
+        <div class="inline-row quick-links-inline">
+            <div class="inline-header">
+                <span class="inline-title">Quick Links</span>
             </div>
-            <div id="abuse" class="box">Loading...</div>
-        </div>
-
-        <div class="result-card">
-            <div class="card-header">
-                <span class="card-icon">🔒</span>
-                <h3>Defanged IP</h3>
+            <div class="quick-links-content">
+                <a id="vtLink" class="quick-chip" target="_blank" rel="noopener noreferrer">VirusTotal</a>
+                <a id="abuseLink" class="quick-chip" target="_blank" rel="noopener noreferrer">AbuseIPDB</a>
+                <a id="ipinfoLink" class="quick-chip" target="_blank" rel="noopener noreferrer">Ipinfo</a>
             </div>
-            <div id="defanged" class="box">Loading...</div>
         </div>
-
-        <footer class="popup-footer">
-            <a href="#" id="optionsLink" class="options-link">
-                <span class="link-icon">⚙️</span>
-                <span>Change API Keys</span>
-            </a>
-        </footer>
-
-        <script src="popup.js"></script>
     </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>

@@ -11,11 +11,12 @@ IP QuickCheck is a lightweight browser extension designed for SOC Analysts, Thre
 ## Features
 
 - **One-click IP reputation lookup** - Right-click context menu integration
-- **Live data from VirusTotal & AbuseIPDB** - Fetches real-time reputation data
+- **Live data from VirusTotal, AbuseIPDB & Ipinfo** - Fetches real-time reputation and network context
 - **Secure API key storage** - All keys stored locally in browser storage
 - **Fast and minimal interface** - Clean, color-coded UI for quick analysis
 - **Cross-browser support** - Works on Chrome, Edge, Brave, Opera
 - **Defanged IP display** - Automatically shows defanged IP format for safe sharing
+- **Ipinfo network insight** - ISP, ASN, geo coordinates, and privacy flags
 - **Color-coded results** - Malicious IPs shown in red, safe IPs in green
 
 ## How It Works
@@ -44,11 +45,13 @@ You'll need API keys from:
 
 - **VirusTotal**: Get your API key from [VirusTotal API](https://www.virustotal.com/gui/join-us)
 - **AbuseIPDB**: Get your API key from [AbuseIPDB API](https://www.abuseipdb.com/pricing)
+- **Ipinfo**: Generate a token from [ipinfo.io](https://ipinfo.io/signup) (free tier works)
 
 1. Right-click the extension icon and select "Options"
 2. Enter your VirusTotal API key
 3. Enter your AbuseIPDB API key
-4. Click "Save"
+4. (Optional but recommended) Enter your Ipinfo token for ISP/geolocation context
+5. Click "Save"
 
 ## Privacy
 
@@ -65,11 +68,13 @@ You'll need API keys from:
 3. The popup will display:
    - **VirusTotal Results**: Malicious and harmless detection counts
    - **AbuseIPDB Results**: Abuse confidence score (0-100)
+   - **Ipinfo Network Insights**: ISP/ASN, geo coordinates, privacy flags
    - **Defanged IP**: Safe-to-share format with brackets
+   - **Quick Links**: Jump straight to details on VT, AbuseIPDB, or Ipinfo
 
 ### Extension Popup
 
-Click the extension icon to open the popup and view the last checked IP's reputation.
+Click the extension icon to open the popup and view the last checked IP's reputation plus the most recent network telemetry.
 
 ## Color Coding
 
@@ -118,7 +123,7 @@ ip-quickcheck/
 
 - `contextMenus`: For right-click menu integration
 - `storage`: For local API key storage
-- `host_permissions`: For VirusTotal and AbuseIPDB API access
+- `host_permissions`: For VirusTotal, AbuseIPDB, and Ipinfo API access
 
 ## License
 
