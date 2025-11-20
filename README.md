@@ -88,11 +88,11 @@ Click the extension icon to open the popup and view the last checked IP's reputa
 <table>
   <tr>
     <td align="center">
-      <strong>Reputation Summary</strong><br>
+      <strong>Malicious IP</strong><br>
       <img src="assets/Extension.png" width="320" alt="Extension popup summary view">
     </td>
     <td align="center">
-      <strong>Network Insights</strong><br>
+      <strong>Non Malicious IP</strong><br>
       <img src="assets/Extension2.png" width="320" alt="Extension popup network insights view">
     </td>
   </tr>
